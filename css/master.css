@@ -7,10 +7,8 @@ body {
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	width: 100%; /* Adhere to container width. */
-	display:block;
- }
+	width: 100%
+}
 
 .container {
 	margin: auto;
@@ -56,7 +54,6 @@ HEADER SECTION
 
 #navbar {
 	text-transform: uppercase;
-	margin: 0;
 
 
 }
@@ -106,10 +103,6 @@ HEADER SECTION
    	margin-top: -35px;
 }
 
-.mobile-nav .hamburger-container {
-	
-}
-
 
 
 
@@ -135,10 +128,10 @@ HERO SECTION
 #hero {
 	background:linear-gradient(to bottom, rgba(0,0,0,0.40) 0%,rgba(0,0,0,0) 100%), url('../img/hero.jpg')  no-repeat center center;
 	height: calc(90vh - 80px);
+	width: 100%;
 	background-size: cover;
     border-bottom: 1px solid #1a649c;
     margin-bottom: 30px;
-    padding-right: 200px;
 }
 
 
