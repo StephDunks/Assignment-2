@@ -15,10 +15,6 @@ img {
 }
 
 
-.social-links {
-  font-size: 30px;
-}
-
 
 /* Common Classes*/
 
@@ -87,4 +83,11 @@ HERO SECTION
 	padding-bottom: 20px;
 }
 
+
+/*******************************************
+FOOTER SECTION
+********************************************/
+.fa{
+  font-size: 40px;
+}
 
