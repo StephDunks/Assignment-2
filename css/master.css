@@ -10,6 +10,7 @@ body {
 
 .container {
 	margin: auto;
+	width: 100%;
 }
 
 
@@ -96,6 +97,12 @@ label {
 
 .logo {
 	float: left;
+	margin: 5px 0 0 30px;
+
+}
+
+.logo-container {
+	margin-top: 20px;
 }
 
 .logo a {
