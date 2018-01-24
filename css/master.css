@@ -152,6 +152,7 @@ label {
 @media (max-width: 768px) {
     .hero {
         background-image: url('../img/hero-small.jpg') center center;
+
     }
 
     .mobile-nav {
@@ -169,7 +170,7 @@ HERO SECTION
 
 #hero {
 	background:linear-gradient(to bottom, rgba(0,0,0,0.40) 0%,rgba(0,0,0,0) 100%), url('../img/hero.jpg')  no-repeat center center;
-	height: calc(90vh - 80px);
+	height: calc(100vh - 80px);
 	background-size: cover;
     border-bottom: 1px solid #1a649c;
     margin-bottom: 30px;
