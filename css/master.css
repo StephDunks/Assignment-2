@@ -2,6 +2,8 @@ body {
 	font-family: 'Open-sans', sans-serif;
 	font-size: 17px;
 	line-height: 1.5em;
+	max-width: 100%;
+	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
 }
@@ -22,9 +24,7 @@ body {
 	color: #1a649c;
 }
 
-.primary-text {
-	color: #1a649c;
-}
+
 
 
 /*******************************************
@@ -173,7 +173,10 @@ HERO SECTION
 	height: calc(90vh - 80px);
 	background-size: cover;
     border-bottom: 1px solid #1a649c;
+    background-position: center;
+   
     margin-bottom: 30px;
+
 }
 
 
@@ -184,6 +187,7 @@ HERO SECTION
 #hero h1 {
 	font-size: 50px;
 	color: #fff;
+	text-align: center;
 	
 }
 
@@ -220,7 +224,7 @@ PRODUCT SECTION
   opacity: 1;
 }
 .item-box:hover{
-  border-bottom: 5px solid #73b9ff;
+  border-bottom: 5px solid #1a649c;
   opacity: 1;
 }
 h3{
@@ -262,7 +266,7 @@ h3{
   top: 0;
   left: 235px;
   background: #333;
-  border-top: 5px solid #73b9ff;
+  border-top: 5px solid #1a649c;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   opacity: 0;
@@ -294,14 +298,14 @@ button{
   float: right;
   margin: 6px 12px;
   border: 0;
-  background: #73b9ff;
+  background: #1a649c;
   text-align: center;
   font: normal 16px/32px Helvetica;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #fff;
   cursor: pointer;
-  border: 2px dashed #73b9ff;  
+  border: 2px dashed #1a649c;  
   padding: 0;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
