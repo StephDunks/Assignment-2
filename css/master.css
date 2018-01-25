@@ -203,7 +203,7 @@ PRODUCT SECTION
 ********************************************/
 
 .product-section {
-	margin-top: 50px;
+	margin: 50px 10px;
 }
 
 .product-header {
