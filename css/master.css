@@ -10,6 +10,7 @@ body {
 
 .container {
 	margin: auto;
+	padding: 0;
 	width: 100%;
 }
 
@@ -190,6 +191,125 @@ HERO SECTION
 	background: transparent;
 	padding: 10px 20px;
 	margin-top: 20px;
+}
+
+
+/*******************************************
+PRODUCT SECTION
+********************************************/
+
+.product-section {
+	margin-top: 50px;
+}
+
+.product-header {
+	text-align: center;
+	font-size: 30px;
+}
+
+.item-box{
+  width: 230px;
+  height: 388px;
+  background: #f9f9f9;
+  margin: 20px auto 0;
+  border-bottom: 5px solid #f3f3f3;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+}
+.item-box:hover{
+  border-bottom: 5px solid #73b9ff;
+  opacity: 1;
+}
+h3{
+  font: normal 24px/32px Helvetica;
+  color: #fff;
+  padding: 15px 10px;
+  text-align: center;
+}
+.description{
+  font: normal 12px/18px Helvetica;
+  color: #fff;
+  padding: 0 15px;
+  text-align: justify;
+}
+.picture{
+  width: 230px;
+  height: 325px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  opacity: 1;
+  cursor: pointer;
+}
+.picture img{
+  max-width: 100%;
+  height: 330px;
+ }
+.item-box:hover .picture {
+  left: -230px;
+  opacity: 0;
+}
+.details{
+  width: 230px;
+  height: 320px;  
+  position: absolute;
+  top: 0;
+  left: 235px;
+  background: #333;
+  border-top: 5px solid #73b9ff;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+}
+.item-box:hover .details{
+  left: 0;
+  opacity: 1;
+}
+
+.prices{
+  color: #333;
+  font: bold 24px/48px Sylfaen;
+  padding: 0 12px;
+  float: left;
+}
+
+.bottom{
+  padding: 5px 0;
+  overflow: hidden;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  width:100%;
+}
+
+button{
+  width: 74px;
+  float: right;
+  margin: 6px 12px;
+  border: 0;
+  background: #73b9ff;
+  text-align: center;
+  font: normal 16px/32px Helvetica;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  cursor: pointer;
+  border: 2px dashed #73b9ff;  
+  padding: 0;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+button:hover{
+  color: #00a99d;
+  background: #f3f3f3;
 }
 
 
