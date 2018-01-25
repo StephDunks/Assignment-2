@@ -14,6 +14,7 @@ body {
 	margin: auto;
 	padding: 0;
 	width: 100%;
+  
 }
 
 
@@ -37,6 +38,7 @@ HEADER SECTION
 	height: 70px;
 	line-height: 70px;
 	text-transform: uppercase;
+  
 }
 
 .menu {
@@ -98,7 +100,7 @@ label {
 
 .logo {
 	float: left;
-	margin: 5px 0 0 30px;
+  padding: 20px 0 0 20px;
 
 }
 
@@ -119,32 +121,7 @@ label {
 
 
 
-/* Mobile Nav */
 
-/*.mobile-nav {
-    display: none;
-   
-}
-
-.mobile-nav .logo {
-    display: inline-block;
-    float: left;
-
-}
-
-.mobile-nav button {
-	background: transparent;
-	border: none;
-	margin: 0;
-
-}
-
-.mobile-nav .logo-container {
-    display: inline-block;
-    float: left;
-   	margin-left: 4px;
-   	margin-top: -35px;
-}*/
 
 
 
@@ -169,14 +146,18 @@ label {
 HERO SECTION
 ********************************************/
 
+
+
 #hero {
 	background:linear-gradient(to bottom, rgba(0,0,0,0.40) 0%,rgba(0,0,0,0) 100%), url('../img/hero.jpg')  no-repeat center center;
 	height: calc(100vh - 80px);
 	background-size: cover;
-    border-bottom: 1px solid #1a649c;
-    background-position: center;
-   
-    margin-bottom: 30px;
+  border-bottom: 1px solid #1a649c;
+  background-position: center;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -196,6 +177,7 @@ HERO SECTION
 	background: transparent;
 	padding: 10px 20px;
 	margin-top: 20px;
+  display: block;
 }
 
 
@@ -210,6 +192,7 @@ PRODUCT SECTION
 .product-header {
 	text-align: center;
 	font-size: 30px;
+  color: #1a649c;
 }
 
 .item-box{
@@ -223,6 +206,7 @@ PRODUCT SECTION
   position: relative;
   overflow: hidden;
   opacity: 1;
+  flex: 1;
 }
 .item-box:hover{
   border-bottom: 5px solid #1a649c;
@@ -324,4 +308,5 @@ FOOTER SECTION
 .fa{
   font-size: 40px;
 }
+
 
