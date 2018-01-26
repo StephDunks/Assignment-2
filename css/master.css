@@ -31,15 +31,6 @@ body {
 HEADER SECTION
 ********************************************/
 
-.nav {
-
-	text-align: right;
-	height: 70px;
-	line-height: 70px;
-	text-transform: uppercase;
-  
-}
-
 .menu {
 	margin: 0 30px 0 0;
 
@@ -67,31 +58,6 @@ label {
 	float: right;
 }
 
-#toggle {
-	display: none;
-}
-
-@media only screen and (max-width: 768px) {
-	label {
-		display: block;
-		cursor: pointer;
-	}
-
-	.menu {
-		text-align: center;
-		width: 100%;
-		display: none;
-	}
-	.menu a {
-		display: block;
-		border-bottom: 1px solid #1a649c;
-		margin: 0;
-	}
-	#toggle:checked + .menu {
-		display: block;
-		margin-bottom: 50px;
-	}
-}
 
 
 
@@ -99,9 +65,18 @@ label {
  Desktop Navigation 
  *******************************************/
 
+.desktop-nav {
+
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  text-transform: uppercase;
+   
+ }
+
 .logo {
 	float: left;
-  padding: 20px 0 0 20px;
+  /*padding: 20px 0 0 20px;*/
 
 }
 
@@ -123,16 +98,43 @@ label {
  Mobile Navigation 
  *******************************************/
 
+
 .mobile-nav {
+  height: 70px;
+  display: none;
+}
+
+/*.logo {
+  margin-top: 25px;
+}*/
+
+.mobile-nav .logo {
+  width: calc(100% - 20px);
+}
+
+.hamburger-container {
+  float: right;
+  padding: 0;
+}
+
+
+
+.logo, .hamburger-container {
+ display: inline-block;
+
+}
+
+.mobile-menu {
   position: absolute;
   top: 0;
-  bottom: 0;
   right:0;
+  left: 0;
   width: 200px;
   background: coral;
   padding: 20px;
   transition: 0.4s;
-  transform: translateX(200px);
+  transform: translateX(400px);
+  display: none;
 }
 
 .open {
@@ -163,29 +165,30 @@ label {
 }
 
 
-.fa-bars {
-  padding: 20px;
-  float: right;
-}
 
-.fa-times {
-  float: right;
-}
+
+
+
 
 @media (max-width: 768px) {
-    .hero {
-        background-image: url('../img/hero-small.jpg') center center;
 
-    }
-
-    .mobile-nav {
-        display: block;
-    }
-
-    .desktop-nav {
-        display: none;
-    }
+ .hero {
+  background-image: url('../img/hero-small.jpg') center center;
 }
+ .mobile-nav {
+  display: block;
+}
+  .desktop-nav {
+  display: none;
+}
+
+}
+
+/*@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}*/
 
 /*******************************************
 HERO SECTION
@@ -196,7 +199,7 @@ HERO SECTION
 #hero {
   border-top:1px solid #1a649c;
 	background:linear-gradient(to bottom, rgba(0,0,0,0.40) 0%,rgba(0,0,0,0) 100%), url('../img/hero.jpg')  no-repeat center center;
-	height: calc(100vh - 80px);
+	height: 600px;
 	background-size: cover;
   border-bottom: 1px solid #1a649c;
   background-position: center;
@@ -208,23 +211,14 @@ HERO SECTION
 }
 
 
-#hero .row {
-	height: 100vh;
-}
-
 #hero h1 {
 	font-size: 50px;
 	color: #fff;
 	text-align: center;
+
 	
 }
 
-.hero-button {
-	background: transparent;
-	padding: 10px 20px;
-	margin-top: 20px;
-  display: block;
-}
 
 
 /*******************************************
@@ -234,13 +228,10 @@ PRODUCT SECTION
 .product-container {
   display: flex;
   justify-content: center;
-  margin-right: 80px;
   flex-wrap: wrap;
  
 
 }
-
-
 
 .product-header {
 	text-align: center;
@@ -259,8 +250,6 @@ PRODUCT SECTION
   position: relative;
   overflow: hidden;
   opacity: 1;
-
-  /*Added Flex*/
   flex: 1 1 230px;
   padding: 20px;
   margin: 20px;
@@ -268,7 +257,7 @@ PRODUCT SECTION
 
 
 @media (max-width: 500px) {
-  .flex-container {
+  .product-container {
     flex-direction: column;
   }
 }
@@ -278,18 +267,21 @@ PRODUCT SECTION
   border-bottom: 5px solid #1a649c;
   opacity: 1;
 }
+
 h3{
   font: normal 24px/32px Helvetica;
   color: #fff;
   padding: 15px 10px;
   text-align: center;
 }
+
 .description{
   font: normal 12px/18px Helvetica;
   color: #fff;
   padding: 0 15px;
   text-align: justify;
 }
+
 .picture{
   width: 230px;
   height: 325px;
@@ -302,14 +294,17 @@ h3{
   opacity: 1;
   cursor: pointer;
 }
+
 .picture img{
   max-width: 100%;
   height: 330px;
- }
+}
+
 .item-box:hover .picture {
   left: -230px;
   opacity: 0;
 }
+
 .details{
   width: 230px;
   height: 320px;  
@@ -323,19 +318,20 @@ h3{
   opacity: 0;
   cursor: pointer;
 }
-.item-box:hover .details{
+
+.item-box:hover .details {
   left: 0;
   opacity: 1;
 }
 
-.prices{
+.prices {
   color: #333;
   font: bold 24px/48px Sylfaen;
   padding: 0 12px;
   float: left;
 }
 
-.bottom{
+.bottom {
   padding: 5px 0;
   overflow: hidden;
   position: absolute;
@@ -344,7 +340,7 @@ h3{
   width:100%;
 }
 
-button{
+button {
   width: 74px;
   float: right;
   margin: 6px 12px;
