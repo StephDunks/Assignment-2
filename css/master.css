@@ -187,9 +187,9 @@ PRODUCT SECTION
 
 .product-container {
   display: flex;
-  background: red;
   justify-content: center;
   margin-right: 80px;
+  flex-wrap: wrap;
  
 
 }
@@ -213,10 +213,21 @@ PRODUCT SECTION
   position: relative;
   overflow: hidden;
   opacity: 1;
-  flex: 1;
-  
-  
+
+  /*Added Flex*/
+  flex: 1 1 230px;
+  padding: 20px;
+  margin: 20px;
 }
+
+
+@media (max-width: 500px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+
 .item-box:hover{
   border-bottom: 5px solid #1a649c;
   opacity: 1;
