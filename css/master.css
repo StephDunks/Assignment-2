@@ -12,8 +12,7 @@ body {
 
 .container {
 	margin: auto;
-	padding: 0;
-	width: 100%;
+	width: 90%;
   
 }
 
@@ -185,9 +184,16 @@ HERO SECTION
 PRODUCT SECTION
 ********************************************/
 
-.product-section {
-	margin: 50px 10px;
+.product-container {
+  display: flex;
+  background: red;
+  justify-content: center;
+  margin-right: 80px;
+ 
+
 }
+
+
 
 .product-header {
 	text-align: center;
@@ -199,7 +205,7 @@ PRODUCT SECTION
   width: 230px;
   height: 388px;
   background: #f9f9f9;
-  margin: 20px auto 0;
+  margin-left: 50px;
   border-bottom: 5px solid #f3f3f3;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -207,6 +213,8 @@ PRODUCT SECTION
   overflow: hidden;
   opacity: 1;
   flex: 1;
+  
+  
 }
 .item-box:hover{
   border-bottom: 5px solid #1a649c;
