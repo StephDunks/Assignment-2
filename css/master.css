@@ -1,3 +1,8 @@
+* {
+  font-family: 'Raleway', sans-serif;
+
+}
+
 body {
 	font-family: 'Open-sans', sans-serif;
 	font-size: 17px;
@@ -7,6 +12,7 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
 
 
 
@@ -56,6 +62,19 @@ Hero Section
     transition: .5s;
 }
 
+.fa-power-off {
+  margin-right: 10px;
+}
+
+.logo div {
+ display: inline;
+ margin-left: 10px;
+}
+
+.fa-shopping-cart {
+  margin-left: 10px;
+}
+
 
 .carousel-inner img {
   height: 30%;
@@ -67,10 +86,12 @@ Hero Section
   background: rgba(27, 100, 157, 0.02);
   border: 2px solid #1a649c;
   border-radius: 10px;
+  padding: 0 20px;
  }
 
  .cart a:hover {
   background: rgba(42, 207, 92, 0.64);
+
  }
 
 

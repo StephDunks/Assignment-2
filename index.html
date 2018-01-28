@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Watch Hub</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Code+Pro" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./css/master.css">
@@ -19,14 +20,23 @@
 
  
 <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
-  <div class="logo"><a href="index.html"><i class="fa fa-power-off fa-2x" aria-hidden=" true">Watch Hub</i></a></div>
+  <div class="logo">
+    <a href="index.html"><i class="fa fa-power-off fa-2x" aria-hidden=" true"><div>Watch Hub</div></i></a>
+  </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+     <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Shop
+             </a>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <a class="dropdown-item" href="#">Men's Watches</a>
+               <a class="dropdown-item" href="#">Women's Watches</a>
+               <a class="dropdown-item" href="#">Accesories</a>
+             </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Featured Collection</a>
