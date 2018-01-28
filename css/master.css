@@ -11,78 +11,36 @@ body {
 
 
 .container {
-	margin: auto;
-	width: 90%;
+  width: 80%
+  margin: 0 auto;
+}
+
+
+.hero {
+  border-top:1px solid #1a649c;
+  border-bottom: 1px solid #1a649c;
+  background:linear-gradient(to bottom, rgba(0,0,0,0.40) 0%,rgba(0,0,0,0) 100%), url(../img/hero.jpg) no-repeat center center;
+  background-size: cover;
+  height: 600px;
+
+}
+#content {
+  text-align: center;
+  padding-top: 20%;
+  color: #fff;
+}
+
+.navbar li {
+  font-size: 20px;
+  text-align: center;
   
 }
 
-
-
-/* Common Classes*/
-
-.primary-text {
-	color: #1a649c;
+.navbar  li a:hover {
+  color:#1a649c;
+  border-bottom: 3px solid #1a649c;
 }
 
-
-
-
-/*******************************************
-HEADER SECTION
-********************************************/
-
-.menu {
-	margin: 0 30px 0 0;
-
-}
-
-.menu a {
-	text-decoration: none;
-	color: gray;
-	margin: 0 10px;
-	line-height: 70px;
-	clear: right;
-}
-
-.menu a:hover {
-	color:#1a649c;
-	border-bottom: 3px solid #1a649c;
-}
-
-label {
-	margin: 0 40px 0 0;
-	font-size: 26px;
-	line-height: 70px;
-	display: none;
-	width: 26px;
-	float: right;
-}
-
-
-
-
-/*******************************************
- Desktop Navigation 
- *******************************************/
-
-.desktop-nav {
-
-  text-align: right;
-  height: 70px;
-  line-height: 70px;
-  text-transform: uppercase;
-   
- }
-
-.logo {
-	float: left;
-  /*padding: 20px 0 0 20px;*/
-
-}
-
-.logo-container {
-	margin-top: 20px;
-}
 
 .logo a {
     color: #1a649c;
@@ -94,194 +52,49 @@ label {
     transition: .5s;
 }
 
-/*******************************************
- Mobile Navigation 
- *******************************************/
-
-
-.mobile-nav {
-  height: 70px;
-  display: none;
-}
-
-/*.logo {
-  margin-top: 25px;
-}*/
-
-.mobile-nav .logo {
-  width: calc(100% - 20px);
-}
-
-.hamburger-container {
-  float: right;
-  padding: 0;
+.carousel-inner img {
+  height: 30%;
+  width: 100%;
 }
 
 
 
-.logo, .hamburger-container {
- display: inline-block;
+/*Listings Sections*/
 
-}
-
-.mobile-menu {
-  position: absolute;
-  top: 0;
-  right:0;
-  left: 0;
-  width: 200px;
-  background: coral;
-  padding: 20px;
-  transition: 0.4s;
-  transform: translateX(400px);
-  display: none;
-}
-
-.open {
-  transform: translateX(0px); 
-}
-
-.navigation ul {
-  margin-top: 100px;
-  padding-left: 20px;
-
-}
-
-.navigation li {
-  list-style: none;
-  margin-top: 20px;
-  
-}
-
-.navigation li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-}
-
-.navigation li a:hover {
-  color: red;
-  border-bottom: 1px solid black;
-}
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-
- .hero {
-  background-image: url('../img/hero-small.jpg') center center;
-}
- .mobile-nav {
-  display: block;
-}
-  .desktop-nav {
-  display: none;
-}
-
-}
-
-/*@media (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-}*/
-
-/*******************************************
-HERO SECTION
-********************************************/
-
-
-
-#hero {
-  border-top:1px solid #1a649c;
-	background:linear-gradient(to bottom, rgba(0,0,0,0.40) 0%,rgba(0,0,0,0) 100%), url('../img/hero.jpg')  no-repeat center center;
-	height: 600px;
-	background-size: cover;
-  border-bottom: 1px solid #1a649c;
-  background-position: center;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-
-#hero h1 {
-	font-size: 50px;
-	color: #fff;
-	text-align: center;
-
-	
-}
-
-
-
-/*******************************************
-PRODUCT SECTION
-********************************************/
-
-.product-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
- 
-
-}
-
-.product-header {
-	text-align: center;
-	font-size: 30px;
+.listings-section h1 {
   color: #1a649c;
 }
 
+
 .item-box{
-  width: 230px;
+  width: 100%;
   height: 388px;
   background: #f9f9f9;
-  margin-left: 50px;
+  margin: 20px auto 0;
   border-bottom: 5px solid #f3f3f3;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   position: relative;
   overflow: hidden;
   opacity: 1;
-  flex: 1 1 230px;
-  padding: 20px;
-  margin: 20px;
+  flex:2;
 }
-
-
-@media (max-width: 500px) {
-  .product-container {
-    flex-direction: column;
-  }
-}
-
-
 .item-box:hover{
-  border-bottom: 5px solid #1a649c;
+  border-bottom: 5px solid #73b9ff;
   opacity: 1;
 }
-
 h3{
   font: normal 24px/32px Helvetica;
   color: #fff;
   padding: 15px 10px;
   text-align: center;
 }
-
 .description{
   font: normal 12px/18px Helvetica;
   color: #fff;
   padding: 0 15px;
   text-align: justify;
 }
-
 .picture{
   width: 230px;
   height: 325px;
@@ -294,17 +107,14 @@ h3{
   opacity: 1;
   cursor: pointer;
 }
-
 .picture img{
   max-width: 100%;
   height: 330px;
-}
-
+ }
 .item-box:hover .picture {
   left: -230px;
   opacity: 0;
 }
-
 .details{
   width: 230px;
   height: 320px;  
@@ -312,26 +122,25 @@ h3{
   top: 0;
   left: 235px;
   background: #333;
-  border-top: 5px solid #1a649c;
+  border-top: 5px solid #73b9ff;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   opacity: 0;
   cursor: pointer;
 }
-
-.item-box:hover .details {
+.item-box:hover .details{
   left: 0;
   opacity: 1;
 }
 
-.prices {
+.prices{
   color: #333;
   font: bold 24px/48px Sylfaen;
   padding: 0 12px;
   float: left;
 }
 
-.bottom {
+.bottom{
   padding: 5px 0;
   overflow: hidden;
   position: absolute;
@@ -340,35 +149,30 @@ h3{
   width:100%;
 }
 
-button {
+.item-box button{
   width: 74px;
   float: right;
   margin: 6px 12px;
   border: 0;
-  background: #1a649c;
+  background: #73b9ff;
   text-align: center;
   font: normal 16px/32px Helvetica;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #fff;
   cursor: pointer;
-  border: 2px dashed #1a649c;  
+  border: 2px dashed #73b9ff;  
   padding: 0;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-
 button:hover{
   color: #00a99d;
   background: #f3f3f3;
 }
 
 
-/*******************************************
-FOOTER SECTION
-********************************************/
-.fa{
-  font-size: 40px;
+.listings-section {
+  text-align: center;
+  margin-top: 20px;
 }
-
-
