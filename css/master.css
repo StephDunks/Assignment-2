@@ -3,6 +3,10 @@
 
 }
 
+/*****************************************
+General Styles
+*****************************************/
+
 body {
 	font-family: 'Open-sans', sans-serif;
 	font-size: 17px;
@@ -11,6 +15,8 @@ body {
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
+  text-align: center;
+  background: #f8f8f8;
 }
 
 
@@ -35,6 +41,10 @@ Hero Section
   text-align: center;
   padding-top: 20%;
   color: #fff;
+}
+
+.hero button {
+  font-size: 30px;
 }
 
 .carousel-inner img {
@@ -252,6 +262,53 @@ button:hover{
  background: linear-gradient(to bottom, rgba(0,0,0,0.40) 0%,rgba(0,0,0,0) 100%);
  border-radius: 10px;
  padding: 20px 10px;
+ width: 100%;
+}
+
+@media (max-width: 768px) {
+  .box-1 h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .box-1 button  {
+    font-size: 20px;
+    margin-left: -5px;
+  }
+
+  .box-1 {
+    background:url("../img/promo-small.jpg") no-repeat  center center;
+    background-size: cover;
+  }
+
+}  
+/* Footer Section */
+
+
+.social-footer {
+  background: url("../img/follow.jpeg") no-repeat center center;
+  background: cover;
+  height: 300px;
+  width: 100%;
+}
+
+.social-media {
+  /* margin-top: 20px;*/
+   color: #1a649c;
+ /*  background: url("../img/follow.jpeg") no-repeat center center;
+   background: cover;
+   height: 200px;
+   width: 100%;*/
+
+}
+
+.social-media h1 {
+  margin-bottom: 40px;
+  padding-top: 20px;
+  color: #1a649c;
+}
+
+
 
 
 
