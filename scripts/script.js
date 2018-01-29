@@ -1,23 +1,17 @@
 
-var toggleButton  = document.querySelector('#toggle-button');
-var mobileMenu    = document.querySelector('#mobile-menu');
-var menuIsOpen = true;
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
 
-function toggleMenu() {
-	menuIsOpen = !menuIsOpen
+// Get the navbar
+var navbar = document.getElementById("navbar");
 
- if (menuIsOpen) {
-	mobileMenu.className = 'mobile-menu';
-   } else {
-	mobile-menu.className = 'mobile-menu open';
- }
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
 
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
-
-
-
-
-// * * * * * * * * * * * * * * * * * * * * * * * * * * *
-// 3. Wire everything up
-// * * * * * * * * * * * * * * * * * * * * * * * * * * *
-toggleButton.addEventListener('click', toggleMenu);

@@ -57,6 +57,16 @@ Hero Section
 Navigation Section
 *****************************************/
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
 .navbar li {
   font-size: 20px;
   text-align: center;
