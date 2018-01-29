@@ -287,25 +287,21 @@ button:hover{
 
 .social-footer {
   background: url("../img/follow.jpeg") no-repeat center center;
-  background: cover;
-  height: 300px;
-  width: 100%;
+  background-size:cover;
+  height: 350px;
+  color: #1a649c;
+  margin: 
 }
 
-.social-media {
-  /* margin-top: 20px;*/
-   color: #1a649c;
- /*  background: url("../img/follow.jpeg") no-repeat center center;
-   background: cover;
-   height: 200px;
-   width: 100%;*/
-
-}
 
 .social-media h1 {
-  margin-bottom: 40px;
-  padding-top: 20px;
+  margin-bottom: 30px;
+  padding-top: 40px;
   color: #1a649c;
+}
+
+.social-media i {
+  margin-bottom: 10px;
 }
 
 
